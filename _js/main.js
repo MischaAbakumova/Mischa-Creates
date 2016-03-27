@@ -1,6 +1,6 @@
 //------------------------animation---------------------------------
 
-var list = ["Animation", "Traveling", "Black Coffee", "Cooking", "Animation","Traveling","Black Coffee","Cooking","Doctor Who","Design","Getting Crafty","Settlers of Catan","Killer Whales","Bicycling","Coloring Books","Listening to Music","Rock Climbing" ];
+var list = ["Traveling To Far Places", "Black Coffee", "Cooking", "Studio Ghibli","Doctor Who","Getting Crafty","Killer Whales","Bicycling","Coloring Books","Life Music","Rock Climbing", "To Dislike Politics", "Generative Art" ];
 console.log("runing");
 var lastNumber = 0;
  // $('.overlay').hide();
@@ -16,28 +16,22 @@ setInterval(function(){
 	$("#list").html( list[position]);
 
 }, 3000);
-
+//------------------------ANIMATION END---------------------------------
 // $(this).on("click", function(){
 // 	console.log(this);
 // });
 
-$('.span_1_of_3').hover(function(){
-    // $(this).children('.overlay').css({"bottom":"0px"});
-    console.log('this sucks');
-
-    $(this).find('h2').css({"top":"18px", "color":"black"});
-    // change placement -100px & color white
-    // & in css!!!! transition placement 
-    $(this).find('.cover').css({"opacity":"0.5"});
-    $(this).children('.overlay').css({"bottom":"0px"}); 
-
-}, function(){
-	// & change it back
-	$(this).find('h2').css({"top":"-40px","color":"white"});
-    $(this).children('.overlay').css({"bottom":"-200px"});
-    $(this).find('.cover').css({"opacity":"1"});
+$('#about').click(function() {
+    $('html, body').animate({
+        scrollTop: $('#aboutMe').offset().top
+    }, 2000);
 });
 
+$('#work').click(function() {
+	$('html,body').animate({
+		scrollTop: $('#blinkBlink').offset().top
+	},1000);
+});
 // ------------------------scrollfunction--------------------
 
 var xPos = 0;

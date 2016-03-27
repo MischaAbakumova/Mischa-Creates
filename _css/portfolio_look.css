@@ -6,16 +6,66 @@
 
 @font-face {
     font-family: 'museo_sans300';
-    src: url('/_fornts/museoSansKit/museosans-300-webfont.eot');
-    src: url('/_fornts/museoSansKit/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/_fornts/museoSansKit/museosans-300-webfont.woff2') format('woff2'),
-         url('/_fornts/museoSansKit/museosans-300-webfont.woff') format('woff'),
-         url('/_fornts/museoSansKit/museosans-300-webfont.ttf') format('truetype'),
-         url('/_fornts/museoSansKit/museosans-300-webfont.svg#museo_sans300') format('svg');
+    src: url('/_fonts/museoSansKit/museosans-300-webfont.eot');
+    src: url('/_fonts/museoSansKit/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/_fonts/museoSansKit/museosans-300-webfont.woff2') format('woff2'),
+         url('/_fonts/museoSansKit/museosans-300-webfont.woff') format('woff'),
+         url('/_fonts/museoSansKit/museosans-300-webfont.ttf') format('truetype'),
+         url('/_fonts/museoSansKit/museosans-300-webfont.svg#museo_sans300') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family:'MrEavesModOT-Bold';
+    src: url('MrEavesModOT-Bold_gdi.eot');
+    src: url('MrEavesModOT-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+        url('MrEavesModOT-Bold_gdi.woff') format('woff'),
+        url('MrEavesModOT-Bold_gdi.ttf') format('truetype'),
+        url('MrEavesModOT-Bold_gdi.svg#MrEavesModOT-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+@font-face {
+    font-family:'Avenir-Book';
+    src: url('Avenir-Book_gdi.eot');
+    src: url('Avenir-Book_gdi.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Book_gdi.woff') format('woff'),
+        url('Avenir-Book_gdi.ttf') format('truetype'),
+        url('Avenir-Book_gdi.svg#Avenir-Book') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family:'NeutrafaceText-Bold';
+    src: url('NeutrafaceText-Bold_gdi.eot');
+    src: url('NeutrafaceText-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+        url('NeutrafaceText-Bold_gdi.woff') format('woff'),
+        url('NeutrafaceText-Bold_gdi.ttf') format('truetype'),
+        url('NeutrafaceText-Bold_gdi.svg#NeutrafaceText-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family:'HalisGR-Bold';
+    src: url('HalisGR-Bold_gdi.eot');
+    src: url('HalisGR-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+        url('HalisGR-Bold_gdi.woff') format('woff'),
+        url('HalisGR-Bold_gdi.ttf') format('truetype'),
+        url('HalisGR-Bold_gdi.svg#HalisGR-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
 /*-------------------------------Icomoon---------------------------------------------*/
 @font-face {
     font-family:'icomoon';
@@ -93,7 +143,9 @@ a {
 header{
 	position: relative;
 	background-color: #017069;
-    height:380px;
+    background-color: #92D6D8;
+    height:100%;
+    width:100%;
     min-width: 960px;
     z-index: 10;
     text-align: center;
@@ -113,7 +165,7 @@ header:before{
     margin-top: 20px;
  }
 
- nav a {
+ nav a, #about, #work{
     display: inline-block;
     font-family: 'museo_sans300', Helvetica, sans-serif;
     font-weight: 100;
@@ -127,11 +179,14 @@ header:before{
     margin:2px 0.5em 0 1.2em;
  }
 
+
  nav a.current{border-bottom: 1px solid white;}
 
  nav a.current:hover {color: #F38806;}
 
  nav a:hover {color: #F38806;}
+ nav #about:hover {color: #F38806;}
+ nav #work:hover {color: #F38806;}
 
 .header-top {
     position: absolute;
@@ -151,11 +206,12 @@ header:before{
     text-align: center;
     width: 50%;
     margin: 30px 1em 0 1em;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3em;
     line-height: 1.3;
-    font-family: 'museo_sans300', Helvetica, sans-serif;
+    font-family: 'Avenir-Book',sans-serif;
     color: white;
+    letter-spacing: 0.04em;
 }
  .clearfix:before {
     content: '';
@@ -164,92 +220,49 @@ header:before{
 
  #list {color: #F38806;}
 
-/*------------------------------------RESPONSIVE GRID---------------------------------*/
-#Grid {
-    left:50%;
-    margin: 40px 20px 20px 20px;
+/*------------------------------------BODY Sections---------------------------------*/
+
+/*.slide-container{
+    padding-left: 60px;
+}*/
+
+section{height:100%;
 }
 
-.indicator {
-    position: absolute;
-    left: 50%;
-    top: -6px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 6px 7px 6px;
-    border-color: transparent transparent #ffffff transparent;
-    margin-left: -6px;
-}
-
-.padding {padding: 50px 20px 20px 20px;}
-
-/*  SECTIONS  */
-.section {
-    clear: both;
-    padding: 0px;
-    margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-    display: block;
-    float:left;
-    border: 1px solid red;*/
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF THREE  */
-.span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 66.56%; }
-.span_1_of_3 { width: 33.13%; }
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-
-.aboutProject p{margin: 0;}
-
-.span_1_of_3 .overlay {
+.mobile-table{
+    display: table;
+    table-layout: fixed;
     width:100%;
-    height: 200px;
-    background: white;
-    position: absolute;
-    z-index: 15;
-    bottom: -200px;
-    transition: bottom 0.5s;
+}
+.mobile-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.col-6 {width:50%;}
 
+.col-center{
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.span_1_of_3 .overlay h2 {
-    font-size: 14px;
-    line-height: 1;
-    text-align: center;
-    font-weight: normal;
-    text-transform: uppercase;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: -40px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 15px;
-    color: white;
-    transition: bottom 0.5s;
+.to-the-right{margin-right: 0;}
+
+.big-type{
+    font-family: undefined,sans-serif!important;
+    font-weight: 200;
+    font-size: 2.5em;
+    line-height: 1.125em;
+    text-align: left;
+    margin-left: 15%;
 }
 
-.span_1_of_3 .cover {
-    transition: bottom 0.5s;
+.go-to-page{
+    font-weight: 900;
 }
 
-/*-------------------------------------GRID ENDS------------------------------------*/
+a.mothership{color:white; font-size: 0.5em;}
+a:hover{text-decoration: underline;}
+
 /*------------------------------------ FOOTER---------------------------------------*/
 footer {
 	padding: 20px 0;

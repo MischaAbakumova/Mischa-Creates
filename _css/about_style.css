@@ -2,11 +2,10 @@
 
 .header-top nav a{
 	color:#017069;
-	border: 1px solid yellow;
 }
 
 .header-top nav a:hover{color:#F38806;}
-.header-top nav{ border: 1px solid red;}
+/*.header-top nav{ border: 1px solid red;}*/
 
 .about-container {
 	width:960px;

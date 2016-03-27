@@ -66,17 +66,27 @@
 #description{
 	position: relative;
 	left: calc((100% - 1225px)/2 + 230px);
-	width:950px;
-	margin-bottom: 20px;
+	max-width:715px;
+	margin-bottom: 40px;
 	font-family: 'museo_sans300', Helvetica, sans-serif;
+	text-rendering:optimizedLegibility;
 }
 
 #description h1{
 	text-transform: uppercase;
-	color:#454545;
-	padding: 10px 0 10px 0;
+	color:#333;
+	padding: 40px 0 5px 0;
+	font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 #description p{
-	color:#737373;
+	color:#333;
+	line-height: 1;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 18px;
 }
+
