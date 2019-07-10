@@ -1,232 +1,167 @@
-
-@font-face {
-    font-family:'Avenir-Book';
-    src: url('Avenir-Book_gdi.eot');
-    src: url('Avenir-Book_gdi.eot?#iefix') format('embedded-opentype'),
-        url('Avenir-Book_gdi.woff') format('woff'),
-        url('Avenir-Book_gdi.ttf') format('truetype'),
-        url('Avenir-Book_gdi.svg#Avenir-Book') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-25CA;
-}
-
-@font-face {
-    font-family: 'museo_sans300';
-    src: url('/_fonts/museoSansKit/museosans-300-webfont.eot');
-    src: url('/_fonts/museoSansKit/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/_fonts/museoSansKit/museosans-300-webfont.woff2') format('woff2'),
-         url('/_fonts/museoSansKit/museosans-300-webfont.woff') format('woff'),
-         url('/_fonts/museoSansKit/museosans-300-webfont.ttf') format('truetype'),
-         url('/_fonts/museoSansKit/museosans-300-webfont.svg#museo_sans300') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    width:100%;
-    display: block;
-}
-
-*{
+body{
+    width: 100%;
     margin:0;
-    padding:0;
-    box-sizing: border-box;
 }
 
-.clearfix:before {
-    content: '';
-    display: table;
-}
-
-.clearfix:after {clear: both;}
-
-/*----------------------------------------------------UI ELEMENTs-----------------------------------------------------*/
-
-#my_name:hover{color: #F38806;}
-
-nav a:hover {color: #F38806; text-decoration: none;}
-
-nav #about:hover {color: #F38806;}
-
-nav #work:hover {color: #F38806;}
-
-#scrollLeft img{
+#scrollRight img, #scrollLeft img{
     position: absolute;
-    top: 50%;
-    left:0;
+    top: 33%;
     margin-top: -10;
     z-index: 1000;
     cursor: pointer;
     opacity:.3;
 }
 
-#scrollRight img{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -10;
-    z-index: 1000;
-    cursor: pointer;
-    opacity: .3;
-}
+#scrollRight img{right: 0;}
 
 #scrollRight img:hover {opacity: 1;}
 
 #scrollLeft img:hover{opacity: 1;}
 
-.external{color: #F38806;}
+section.full-height{width: 100%;}
 
-.external:hover{text-decoration: underline;}
+.project-teaser{
+    position:relative;
+    width:100%;
+    max-width: 960px;
+    margin: 120px auto 0;
+}
 
-/*-------------------------------------------------------UI ENDS------------------------------------------------------*/
+.project-teaser h3{
+    width:60%;
+    margin: 25px auto 0;
+    text-align: center; 
+    line-height: 1.2em; 
+}
+h3 a {color: #105aff;}
+h3 a:hover {color: #EF5750;; text-decoration: none;}
 
+.mothership_site a, span{color: #105aff; text-decoration: none; margin-bottom: 30px;}
 
-/*Essentials*/
-.full-height{
-    background-size: cover;
+article.project-section {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width: 1024px;
+    margin-top: 50px;
+}
+
+article::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+article.project-section:first-of-type{margin-top: 110px;}
+article.project-section:last-of-type{margin-bottom: 110px;}
+
+p{
+    font-family: 'BasisGrotesque-Bold',sans-serif!important;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+figure.featured-images{margin-bottom:100px;}
+
+.featured-images.bullet{margin-bottom: 40px;}
+
+figure.featured-images img{
     width: 100%;
     height: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
-.inner_cell{ 
-    display: table-cell;
-    vertical-align: middle;
+figure #work-it img{
+    width: 75%;
+    left: calc(50% - 35%);
+    position: relative;
+    padding-top: 30px;
 }
-/*Essentials End*/
+
+.featured-images iframe{ width:100%; }
 
 
+.project-section h3{
+    margin: 40px 0 24px;
+    font-size: 20px;
+    line-height: 24px;
+    color:#000;
+}
 
-/*------------------------------------------EVERYTHING HEADER-----------------------------------*/
+.project-section a{color:#105aff; text-decoration: none;}
+.project-section a:hover{color: #EF5750; text-decoration: none;}
 
-.header-top {
-    position: absolute;
-    top: 0;
-    z-index: 20;
-    width: 100%;
+.six-colums{
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+}
+
+.six-colums:last-child {margin-right: 0;}
+
+.last {margin-right: 0;}
+
+.featured-images.altered{margin-bottom: 20px;}
+
+.one-colum{
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+}
+
+.two-colums{
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 12.3443%;}
+
+.two-colums p, .one-colum p{margin-bottom: 40px;}
+
+.five-colum{
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+}
+
+.five-colum:last-child {margin-right: 0;}
+
+.four-colums{  
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 30.76157%;
     text-align: center;
 }
 
-#header-wrapper{
-    position:relative;
-    overflow: hidden;
-    min-width: 960px;
+.full-screen {width: 31.76157%;}
+
+.four-colums:last-child {margin-right: 0;}
+
+.eight-colums{
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88978%;
 }
 
-nav a, #about, #work{
-    display: inline-block;
-    font-family: 'museo_sans300', Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 1.2em;
-    line-height: 1;
-    letter-spacing: 1;
-    text-decoration: none;
-    text-transform: lowercase;
-    color: white;
-    padding: 10px 0;
-    margin:0 0.5em 0 1.2em;
-}
-
-#my_name {
-    float:left;
-    color:white;
-    padding: 10px 0;
-    margin-left: 100px;
-    margin-top: 20px;
-    font-family: 'Avenir-Book', sans-serif;
-    font-size: 1.2em;
-    letter-spacing:0.5;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-decoration: none;
- }
-
-.title-wrapper{
-    min-height: 180px;
-    overflow: hidden;
-    z-index: 15;
-    position: relative;
-    padding: 80px;
-    margin-bottom: 0;
-    margin-top: 80px;
-}
-
-.title-inner{
-    text-align: center;
-    z-index: 100;
-    position: relative;
-    margin: 0 auto;
+.twelve-colums{
+    float: left;
+    display: block;
     width:100%;
 }
 
-.title{
-    box-sizing: border-box;
-    width: auto;
-    max-width: 100%;
-}
-
-h2.page-title {
-    font-family: 'Avenir-Book', sans-serif;
-    color:white;
-    font-weight: 900;
-    font-size: 7em;
-}
-
-/*------------------------------------------ HEADER ENDS------------------------------------------------*/
-
-
-/*-------------------------------------------BODY--------------------------------------------------------*/
-
-/*------------Intro--------------*/
-
-
-.section-logo{margin: 5rem auto 0;}
-
-#intro_container, #moto_wrapp, #thank_you_card {
-    font-family: 'Proxima Nova Th', sans-serif;
-    text-transform: uppercase;
-    margin: 2.5rem auto 2.5rem;
-    width:100%;
+.center{
+    margin-left: 17.05961%;
     text-align: center;
-    display: table;
-    font-size: 1em;
-    opacity: 0.6;
+    margin-bottom: 65px;
 }
-
-#thank_you_card{
-    margin: 4rem auto;
-    font-weight: 600;
-    font-size: 1.3em;
-}
-
-#moto_wrapp h2{
-    font-family: 'Proxima Nova Th', sans-serif;
-    font-weight: 900;
-    line-height: 1.4em;
-    text-transform: uppercase;
-    margin: 0 auto 0;
-}
-
-.work_types{
-    display: inline-block;
-    font-family: 'Proxima Nova Th', sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-
-
-/*------Body-----------*/
 
 .prj_description{
-    font-family: 'Proxima Nova Th', sans-serif;
-    font-weight: 200;
     line-height: 1.4em;
     color: #59595b;
-    margin: 1.2rem auto 5rem;
+    margin: 4rem auto 5rem;
 }
 
 #content_container{
@@ -253,7 +188,7 @@ h2.page-title {
 }
 
  .section-title{
-    font-family: 'Proxima Nova Th', sans-serif;
+    font-family: 'BasisGrotesque-Bold', sans-serif;
     text-transform: uppercase;
     margin: 4rem auto;
     text-align: center;
@@ -283,7 +218,7 @@ h2.page-title {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+/*    height: 100%;*/
 }
 
 
@@ -292,18 +227,60 @@ h2.page-title {
     max-width: 1080px;
 }
 
+.bottom-navigation{
+    margin: 80px auto 35px auto;
+    width:100%;
+    max-width: 1024px;
+}
+
+.bottom-navigation a{
+    color:#105aff; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom-navigation span>a:hover{
+    color: #EF5750;
+    opacity: 1;
+    transition: all 300ms;
+    letter-spacing: .3px;
+    text-decoration: none;
+}
+
+.left {
+    left: 0;
+    position: relative;
+    width: 49%;
+    text-align: left;
+    display: inline-block;
+}
+
+.bottom-navigation img {
+    position: relative;
+    top: 3px;
+}
+
+.left img {margin-left: 15px;}
+.lright img {margin-right: 15px;}
+.right {
+    right: 0;
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+
+
+
+
 /*---------------------------------------------mesc------------slider-------------------------------*/
 
 #container-md{
-    margin:6.5rem auto 6.5rem;
+    margin:0 auto;
     position: relative;
-    max-width:700px;
-    height:101px;
+    max-width:800px;
     padding: 0;
     overflow: hidden;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
 }
 
 .slider_wrapper-md{
@@ -336,102 +313,97 @@ h2.page-title {
     transition: all 2s ease-in-out;
 }
 
-
-figure{
-    overflow: hidden;
-    display: inline-block;
-    width: calc(50% - 4px);
-    margin-left: 0;
-    margin-right: 0;
+#booth {
+  position: relative;
+  height: 500px;
+  width: 270px;
+  border: 3px solid #121e23;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 15px 15px 0 0
 }
 
-figure img{
-    width:100%;
-    display: block;
-    margin: 0;
+#booth::after{
+  content: '';
+  position: absolute;
+  width: 290px;
+  height: 10px;
+  border: 3px solid #121e23;
+  bottom: -16px;
+  left: -15px;  
 }
 
-/*--------------------------------------------DESKTOP------------------------------------------------------*/
-
-@media screen and (min-width: 1025px){
-
-    .header-top {margin-top: 6vh;}
-
-    nav {
-        float:right;
-        margin-right: 20px 100px 0 0;
-    }
-
-    .section-logo{
-        width:100px; 
-        height:100px; 
-    }
-
-    #moto_wrapp h2{font-size: 1.5em;}
-
-    .separator{
-        display: inline-block;
-        margin: 1.5rem;
-    }
-
-    .prj_description{
-        font-size: 1.2em;
-        max-width:1080px;
-    }
-
-    .section-title{
-        font-weight: 600;
-        font-size: 1.1em;
-    }
-
-    #container-md{width:1080px;}
-
-    #image_slider-md {padding:0 0 0 45px;}
-
+#display {
+  position: absolute;
+  border: 3px solid #121e23;
+  height: 70%;
+  width: 76%;
+  top: 25px;
+  left: calc(50% - 38%); 
+  border-radius: 3px; 
 }
+
+#cam {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #121e23;
+  position: absolute;
+  top: 9px;
+  left: calc(50% - 3px)
+}
+
+
 
 /*----------------------------------------------MOBILE SCREENSSSSSS---------------------------------*/
-@media screen and (max-width: 1024px){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 
-    .header-top {margin-top: 2vh;}
-
-    /*needs to be replaced by a hamburger*/
-    nav {
-        float:right;
-        margin-right: 100px;
-        margin-top: 20px;
-    }
-
-    #my_name {display: none;}
-
-    .section-logo{max-height:80px; }
-
-    #moto_wrapp h2{font-size: 1.8em;}
-
-    .work_types{
-        display: list-item;
-        margin-top: 0.6em;
-    }
-
-    .separator{display: none;}
-
-    .prj_description{
-        font-size: 0.9em;
-        margin: 1.5em 5em 5em;
-    }
-
-    .section-title{
-        font-size: 1.1em;
-        opacity: 0.6;
-    }
+    section{padding:10px;}
 
     /*----------------------------------Slider Container-----------------------------------------*/
     #container-md{max-width:700px;}
 
     #image_slider-md {padding:0 0 0 30px;}
 
-    figure{
+    figure.gif{
         width: calc(24% - 5px);
         margin-left: 6px;
     }
 }
+
+@media only screen and (max-device-width: 768px){
+    section{padding:10px;}
+
+    .project-teaser h3{
+        width: 90%;
+        margin: 15px auto;
+    }
+
+      h1{font-size: 30px;
+        line-height: 27px;
+        letter-spacing: -1.8px;
+    }
+
+    .project-section h3{ margin-top: 0; }
+
+    figure.featured-images{margin-bottom:30px;}
+
+    .six-colums, .four-colums, .five-colum, .eight-colums, .center, .two-colums{
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    article.project-section{margin-bottom: 30px;}
+}
+
+@media only screen and (max-device-width: 540px){
+    h1{font-size: 30px;
+        line-height: 27px;
+        letter-spacing: -1.8px;
+    }
+}
+

@@ -1,160 +1,114 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="Portfolio of Mischa Abakumova, the creative technologiest and interaction designer.">
-	<meta name="keywords" content="design, portfolio, interaction design, code, photography, physical computing, concept, idea, creative, interactive">
-	<title>Mischa Creates</title>
-	<link rel="shortcut icon" href="yellow.ico" type="image/x-icon">
-	<link rel="icon" href="yellow.ico" type="image/x-icon">
-	<link href="_css/portfolio_look.css" rel="stylesheet" type="text/css">
-	 <!-- <script src="_js/_javaSc/jquery-1.11.2.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.js"></script>
-<!-- 	// <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script> -->
-</head>
-<body>
-	<!-- HEAD -->
-	<header>
-		<div class="clearfix header-top-main">
-			<nav>
-				<span id="work">Work</span>
-				<a target="_blank" href="http://mischaabakumova.tumblr.com/">Blog</a>
-				<span id="about">About</span>	
-			</nav>
-			<span id="my_name">Mischa Abakumova</span>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Portfolio of Mischa Abakumova, thee creative technologist and interaction designer.">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta name="keywords" content="design, portfolio, interaction design, code, photography, physical computing, concept, idea, creative, interactive">
+		<title>Mischa Creates</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link href="_css/frame.css" rel="stylesheet" type="text/css">
+		<link href="_css/portfolio_look.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="top-navigation-contaner folded-down">
+				<div class="top-navigation">
+					<span id="work">Work</span>
+					<div class="seperator">|</div>
+					<a target="_blank" href="http://mischaabakumova.tumblr.com/">Blog</a>
+					<div class="seperator">|</div>
+					<span id="about">About</span>
+				</div>
+			</div>
+		</header>
+		<div id="cursor" class="cursor"></div>
+		<div class="introMe">
+			<div id="text-box">
+				<h1 class="twelve-colums clear">
+					Hi there!<br>
+					My name is Mischa and I'm a designer and a music nerd based in Brooklyn.<br>
+					<span>I like </span><span id="list">Animation</span>
+				</h1>
+				<div id="scroll-indicator">
+					<span id="arrow-down">
+						<svg id="arrow-control" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="69.6 710.5 631.9 307" enable-background="new 69.6 710.5 631.9 307" xml:space="preserve"><g><path id="colors" fill="#404040" stroke="#404040" stroke-width="20" stroke-miterlimit="10" d="M685.1,730.3c-9.7-11.5-26.8-13.2-38.3-3.5l-261.3,218L124.2,726.9c-11.5-9.6-28.8-8.1-38.3,3.5c-9.6,11.5-8.1,28.8,3.5,38.3L368.2,1001c5,4.2,11.3,6.4,17.5,6.4c6.3,0,12.4-2.1,17.5-6.4l278.8-232.4C693.3,759.1,694.8,741.9,685.1,730.3z"/></g></svg>
+					</span>
+				</div>
+			</div>
 		</div>
-		<div class="header-text">
-			<h4><span>Hi, I am Mischa!</span></h4> 
-			<h4>I like <span id="list">Animation</span></h4>
-		</div>
-		<div id="scroll-indicator">
-			<span id="arrow-down">
-				<!-- <img src="_images/gluphs/arrow.svg" width="30" height="30" alt="v"> -->
-				<svg id="arrow-control" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="69.6 710.5 631.9 307" enable-background="new 69.6 710.5 631.9 307" xml:space="preserve">
-					<g>
-						<path id="colors" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M685.1,730.3c-9.7-11.5-26.8-13.2-38.3-3.5
-							l-261.3,218L124.2,726.9c-11.5-9.6-28.8-8.1-38.3,3.5c-9.6,11.5-8.1,28.8,3.5,38.3L368.2,1001c5,4.2,11.3,6.4,17.5,6.4
-							c6.3,0,12.4-2.1,17.5-6.4l278.8-232.4C693.3,759.1,694.8,741.9,685.1,730.3z"/>
-					</g>
-				</svg>
-			</span>
-		</div>
-	</header>
-	<!-- BODY -->
-	<article class="slide-container full-height">
-		<section id="blinkBlink" class="slide mobile-table full-height-main" style="background-image:url(_images/BlinkBlink/purple_confetti1920x1080_cov.png)">
+		<section id="ursa" class="front" style="background-image:url(_images/Ursa/ursa_cover_small_scale-03.png)">
+			<div class="mobile-table-cell">
+				<div class="col-center col-5" id="altered-2" style="margin-left:6%; margin-top: -15%;">
+					<h2 class="black"><a href="ursa.html" class="go-to-page" style="color:#FFC215;"> Ursa</a>
+					<br>An AR app that helps users to make environmentally conscious purchases.</h2>
+				</div>
+			</div>
+		</section>
+		<section id="heartfelt" class="front" style="background-image:url(_images/Heartfelt/cover_2.jpg)">
 			<div class="mobile-table-cell">
 				<div class="col-center col-6">
-					<div class="text box" style="color:white;">
-						<p class="big-type"> Incredibly proud to be a part of the <a href="blink-blink.html" class="go-to-page" style="color:#57E4B6;">Blink Blink</a> team, the startup that gets girls excited about technology. <br>Product designer and educator.</br><br><a href="http://www.blinkblink.cc/" class="mothership" target="_blank">blinkblink.cc</a></br></p>
-					</div>
+					<h2 class="white"><a href="heartfelt.html" class="go-to-page" style="color:#FFE448;"> Heartfelt</a><br>An intereactive installation exploring interpersonal connections.</h2>
 				</div>
 			</div>
 		</section>
-		<section id="octocom" class="slide mobile-table full-height-main" style="background-image:url(_images/octocom/cover_1920.png)">
-			<div class="mobile-table-cell aligh-right">
-				<div class="col-center col-6">
-					<div class="text box" style="margine-bottom:26em; color:white;">
-						<p class="big-type"><a href="octocom.html" class="go-to-page" style="color:darkorange;">Octocom</a> is an interactive installation that enables meaningful communication through bio-coding.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="redBull" class="slide mobile-table full-height-main" style="background-image:url(_images/red_bull/all_face_middle.png);">
-			<div class="mobile-table-cell aligh-right">
-				<div class="col-center col-6" style="margin-left:37vw; width:55%">
-					<div class="text box">
-						<p class="big-type" style="color:floralwhite;">Series of packaging <a href="red-bull.html" class="go-to-page" style="color:f45774;">Games</a> designed for <span class="buzzz">Red Bull.</span></p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="cookie_monster" class="slide mobile-table full-height-main" style="background-image:url(_images/cookie/cookie.png);">
+		<section id="flir" class="front" style="background-image:url(_images/flir/cover.jpg)">
 			<div class="mobile-table-cell">
 				<div class="col-center col-6">
-					<div class="text box">
-						<p class="big-type" style=""> <a href="cookie-monster.html" class="go-to-page" style="color:cornflowerblue;">Cookie Monster</a>. Use your mouth as a controller to play the game and catch food.</p>
-					</div>
+					<h2 class="white"><a href="flir-photobooth.html" class="go-to-page" style="color:#57E4B6;"> Therminator</a> <br>Experiencing the science of heat with an international activation strategy.</h2>
 				</div>
 			</div>
 		</section>
-		<section id="inkling" class="slide mobile-table full-height-main" style="background-image:url(_images/inklink/cover-right.png); background-position:center center;">
+		<section id="blinkBlink" class="front" style="background-image:url(_images/BlinkBlink/purple_confetti1920x1080_cov.png)">
 			<div class="mobile-table-cell">
-				<div class="col-center col-6 to-the-left">
-					<div class="text box" style="color:white">
-						<p class="big-type"><a href="whats-your-name-again.html
-							" class="go-to-page" style="color:steelblue;">Inkling</a> is an app that helps people to remember names and orginize business cards.</p>
-					</div>
+				<div class="col-center col-6">
+					<h2 class="white"> Incredibly proud to be a part of the <a href="blink-blink.html" class="go-to-page" style="color:#57E4B6;">Blink Blink</a> team - the startup that gets girls excited about technology.</h2>
+				</div>
+			</div>
+		</section>
+		<section class="front" style="background-image:url(_images/octocom/cover_1920.png)">
+			<div class="mobile-table-cell">
+				<div class="col-center col-6">
+					<h2 class="white"><a href="octocom.html" class="go-to-page" style="color:darkorange;">Octocom</a> is an interactive installation that enables meaningful communication through bio-coding.</h2>
+				</div>
+			</div>
+		</section>
+		<section  class="front" style="background-image:url(_images/red_bull/all_face_middle.png);">
+			<div class="mobile-table-cell">
+				<div class="col-right col-5" id="altered">
+					<h2 class="white">Series of <a href="red-bull.html" class="go-to-page" style="color:#f45774;">Packaging Designs</a> for Red Bull that transforms classic games into new experiences.</h2>
+				</div>
+			</div>
+		</section>
+		<section class="front" style="background-image:url(_images/cookie/cookie.png);">
+			<div class="mobile-table-cell">
+				<div class="col-center col-6">
+					<h2 class="black"> <a href="cookie-monster.html" class="go-to-page" style="color:cornflowerblue;">Cookie Monster</a> is a video game about food safety and establishing healthy eating habits.</h2>
+				</div>
+			</div>
+		</section>
+		<section class="front" style="background-image:url(_images/inklink/cover-right.png);">
+			<div class="mobile-table-cell">
+				<div class="col-left col-5">
+					<h2 class="white"><a href="inkling.html" class="go-to-page" style="color:steelblue;">Inkling</a> is a mobile app that streamlines the process of collecting, storing and retrieving business cards.
+					</h2>
 				</div>
 			</div>
 		</section>	
-		<section id="festival" class="slide mobile-table full-height-main" style="background-image:url(_images/armv/circle2732x1536opacity.png)">
-			<div class="mobile-table-cell">
-				<div class="col-center col-6" syle="width:60%;">
-					<div class="text box">
-						<p class="big-type"><a href="armv.html" class="go-to-page" style="color:purple;"><br>Architecture of Movement,</a></br> a festival of urban culture and ideas. Co-founder and currator.<br><a href="http://www.armv.ru" target="_blank" class="mothership" style="color:black;">armv.ru</a></br></p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="photos" class="slide mobile-table full-height-main" style="background-image:url(_images/Photos/0.png)">
+		<section class="front" style="background-image:url(_images/armv/circle2732x1536opacity.png)">
 			<div class="mobile-table-cell">
 				<div class="col-center col-6">
-					<div class="text box">
-						<p class="big-type"><a href="selfies-are-overrated.html" class="go-to-page" style="color:hotpink;">Photography.</a> Film and film only.</p>
-					</div>
+					<h2 class="black"><a href="armv.html" class="go-to-page" style="color:purple;"><br>Architecture of Movement</a>,</br> a festival of urban culture and ideas. <br>Co-founder and curator.</h2>
 				</div>
 			</div>
 		</section>
-		<section id="screwed" class="slide mobile-table full-height-main" style="background-image:url(_images/Screwed/cover-cut.png)">
-			<div class="mobile-table-cell aligh-right">
-				<div class="col-center col-6 to-the-right" style="width: 50%;">
-					<div class="text box">
-						<p class="big-type"><a href="we-screwed-up.html" class="go-to-page" style="color:mediumseagreen;">Screwed</a> is a sculptural <br>data visualisation</br> that explores relationship between humans impact and time.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="aboutMe" class="slide mobile-table full-height-main" style ="background-color:#92D6D8;">
-			<div class="mobile-table-cell">
-				<div class="col-center col-6">
-					<div class="text box about_me">
-						<p id="accent">Shameless selfpromotion</p>
-						<h3>Essentially</h3>
-						<p>I make fun things for people to play with.</p>
-						<h3>The Official Version</h3>
-						<p>Mischa is a Creative Technologist and Interaction designer passionate about making this planet a better place. Recently she graduated from Parsons School of Design with a degree in Design and Technology with previous backgraound in architecture and music. Born and raised in snowy Russia, she now resides in Brooklyn, New York.</p>
-						 <p id="resume">P.S. I have a more detailed <a target="_blank" href="">résumé</a> if you're into that sorts of things.</p>
-						<h3 id="contact">Say Hello</h3>
-					    <p><a href="mailto:mischa.abakumova@gmail.com" id="email"> mischa.abakumova@gmail.com</a></p>
-					   
-					</div>
-				</div>
-			</div>
-		</section>
-	</article>
-
-	<!-- FOOTER -->
-	<footer>
-		<div id="social">
-			<a href="https://twitter.com/MischaAbakumova" target="_blank">
-				<span class="icon-twitter-01-01"></span>
-			</a>
-			<a href="https://instagram.com/mischa_creates" target="_blank">
-				<span class="icon-instagram-01-01"></span>
-			</a>
-			<a href="https://github.com/MischaAbakumova" target="blank">
-				<span class="icon-github-01-01"></span>
-			</a>
-			<a href="https://www.linkedin.com/in/mischaabakumova?trk=nav_responsive_tab_profile_pic" target="_blank">
-				<span class="icon-linkedin-01-01"></span>
-			</a>
-			<a href="https://www.behance.net/mischaabak9332" target="blank">
-				<span class="icon-behance"></span>
-			</a>
-		</div>
-	</footer>
-<script type ="text/javascript" src = "_js/main.js"></script>	
-</body>
+		<section class="all_other"></section>
+		<footer></footer>
+		<script type ="text/javascript" src = "_js/main.js"></script>	
+	</body>
 </html>
 
