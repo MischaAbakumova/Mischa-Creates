@@ -95,6 +95,15 @@ header a, #about, #work, #home, .seperator{
     text-align: center;
 }
 
+.center{
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-family: 'BasisGrotesque-Bold',sans-serif!important;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #105AFF;
+}
+
 div.introMe #text-box{
     height: 100%;
     max-width: 835px;
